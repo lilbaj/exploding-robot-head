@@ -11,6 +11,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  position: relative;
 }
 
 .banner {
@@ -19,6 +20,12 @@ body {
 
 .robot {
   width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .robot-body {
@@ -27,9 +34,29 @@ body {
 
 .robot-brain {
   width: 46px;
+  position: absolute;
+  bottom: 6.5em;
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
+  position: absolute;
+}
+
+.robot-head-right {
+  left: 10em;
+  bottom: 3.25em;
+}
+
+.robot-head-left {
+  right: 10em;
+  bottom: 3.25em;
+}
+
+.robot-head-right:hover,
+.robot-head-left:hover {
+  bottom: 4em;
+  left: 12.5em;
+  right: 12.5em;
 }
