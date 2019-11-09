@@ -16,7 +16,7 @@ body {
 
 .banner {
   background-color: #2b3851;
-  min-height: 278px;
+  min-height: 246px;
 }
 
 .robot {
@@ -25,6 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: -2em;
   left: 50%;
   transform: translate(-50%, 50%);
 }
@@ -55,7 +56,16 @@ body {
   bottom: 3.25em;
 }
 
-.robot:hover < .robot-head-right {
+.robot:hover > .robot-head-right {
   bottom: 4em;
   left: 12.5em;
+}
+
+.robot:hover > .robot-head-left {
+  bottom: 4em;
+  right: 12.5em;
+}
+
+.robot:hover > .robot-brain {
+  bottom: 8em;
 }
