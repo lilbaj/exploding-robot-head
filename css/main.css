@@ -16,6 +16,7 @@ body {
 
 .banner {
   background-color: #2b3851;
+  min-height: 278px;
 }
 
 .robot {
@@ -54,9 +55,7 @@ body {
   bottom: 3.25em;
 }
 
-.robot-head-right:hover,
-.robot-head-left:hover {
+.robot:hover < .robot-head-right {
   bottom: 4em;
   left: 12.5em;
-  right: 12.5em;
 }
